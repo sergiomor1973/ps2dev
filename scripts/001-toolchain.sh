@@ -33,4 +33,4 @@ fi
 cd "$REPO_FOLDER"
 
 ## Build and install.
-./toolchain.sh
+sudo ./toolchain-sudo.sh
