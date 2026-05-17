@@ -24,10 +24,10 @@ fi
 
 if test ! -d "$REPO_FOLDER"; then
   git clone --depth 1 -b "$REPO_REF" "$REPO_URL" "$REPO_FOLDER"
-else
-  git -C "$REPO_FOLDER" remote set-url origin "$REPO_URL"
-  git -C "$REPO_FOLDER" fetch origin "$REPO_REF" --depth=1
-  git -C "$REPO_FOLDER" checkout -f FETCH_HEAD
+# else
+#  git -C "$REPO_FOLDER" remote set-url origin "$REPO_URL"
+#  git -C "$REPO_FOLDER" fetch origin "$REPO_REF" --depth=1
+#  git -C "$REPO_FOLDER" checkout -f FETCH_HEAD
 fi
 
 cd "$REPO_FOLDER"
